@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [IRCTCSuite]">
+  <test name="IRCTCAutomate">
+    <classes>
+      <class name="IRCTCLogin.IRCTCLoginTest"/>
+    </classes>
+  </test> <!-- IRCTCAutomate -->
+  <test name="IRCTCAutomate(failed)">
+    <classes>
+      <class name="IRCTCLogin.IRCTCLoginTest">
+        <methods>
+          <include name="doVerifyTitle"/>
+        </methods>
+      </class> <!-- IRCTCLogin.IRCTCLoginTest -->
+    </classes>
+  </test> <!-- IRCTCAutomate(failed) -->
+</suite> <!-- Failed suite [IRCTCSuite] -->
